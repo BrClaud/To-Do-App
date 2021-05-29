@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etRegName"
+        android:layout_width="283dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="имя"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/etRegName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etRegName"
+        app:layout_constraintTop_toBottomOf="@+id/etRegName" />
+
+    <EditText
+        android:id="@+id/etRegPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etRegEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etRegEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etRegEmail" />
+
+    <TextView
+        android:id="@+id/tvHintRegPass"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="пароль должен содержать не менее 8 символов"
+        app:layout_constraintEnd_toEndOf="@+id/etRegPass"
+        app:layout_constraintStart_toStartOf="@+id/etRegPass"
+        app:layout_constraintTop_toBottomOf="@+id/etRegPass" />
+
+    <Button
+        android:id="@+id/btRegAcc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="btRegAcc"
+        android:text="создать аккаунт"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spRegGender"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spRegGender"
+        app:layout_constraintTop_toBottomOf="@+id/spRegGender"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spRegGender"
+        android:entries="@array/genders"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/etRegRetryPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etRegRetryPass"
+        app:layout_constraintTop_toBottomOf="@+id/etRegRetryPass" />
+
+    <EditText
+        android:id="@+id/etRegRetryPass"
+        android:hint="повтор пароля"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvHintRegPass"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="@+id/tvHintRegPass"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintRegPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

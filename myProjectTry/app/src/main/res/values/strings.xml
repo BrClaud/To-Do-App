@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <string-array name="genders">
+        <item>мужской</item>
+        <item>женский</item>
+        <item>неопределенный</item>
+    </string-array>
+    <string name="note_complete">задача выполнена</string>
+    <string name="note_not_complete">задача еще не выполнена</string>
+    <string name="note_delete">удалить задачу</string>
+</resources>
